@@ -33,6 +33,8 @@ public class LaunchEdge {
 		// locator for Google search button
 		WebElement searchIcon = driver.findElement(By.name("btnK"));
 		searchIcon.click();
+		
+		
 	}
 
 }
