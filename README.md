@@ -22,5 +22,5 @@ Boring web-based administration tasks can (and should) also be automated as well
 
 ## Authors
 
-- [@Dipak Kadam]((https://www.linkedin.com/in/dmk07/))
+[@Dipak Kadam](https://www.linkedin.com/in/dmk07/)
 
