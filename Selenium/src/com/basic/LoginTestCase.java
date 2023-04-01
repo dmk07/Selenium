@@ -26,7 +26,7 @@ public class LoginTestCase {
 		WebElement password=driver.findElement(By.id("user_password"));
 		
 		username.sendKeys("dipak100kadam@gmail.com");
-		password.sendKeys("127564049919"); 
+		password.sendKeys("12756"); 
 		//
 	
 		driver.findElement(By.id("user_submit")).click();
