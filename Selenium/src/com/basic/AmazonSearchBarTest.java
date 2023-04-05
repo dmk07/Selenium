@@ -17,7 +17,7 @@ public class AmazonSearchBarTest {
 		
 		driver.manage().window().maximize();
 		driver.navigate().to("https://www.amazon.in/");
-		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone 13");
+		driver.findElement(By.id("a-page")).sendKeys("iphone 13");
 		driver.findElement(By.id("nav-search-submit-button")).click();
 	//	driver.findElement(By.className("nav-a")).click();
 
@@ -27,7 +27,7 @@ public class AmazonSearchBarTest {
 		{
 		driver.manage().window().maximize();
 		driver.navigate().to("https://www.amazon.in/");
-		driver.findElement(By.className("nav-line-2")).click();
+		driver.findElement(By.className("nav-line")).click();
 		}
 	
 	public static void main(String[] args) {
