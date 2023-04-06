@@ -1,4 +1,4 @@
-package login.testing;
+package com.register;
 
 import java.io.File;
 import java.io.IOException;
