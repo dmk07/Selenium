@@ -28,10 +28,22 @@ public class Cancel {
 		driver.switchTo().alert().dismiss();
 		
 	}
+	
+	public void sendData() throws InterruptedException
+	{
+		driver.findElement(By.linkText("Reset")).click();
+		Thread.sleep(2000);
+		driver.switchTo().alert().sendKeys("dipak100kadam@gmail.com");
+		Thread.sleep(2000);
+		driver.switchTo().alert().accept();
+		Thread.sleep(2000);
+		
+	}
 	public static void main(String[] args) throws InterruptedException {
 		Cancel cancel=new Cancel();
 		cancel.launchAUT();
 		cancel.cancel();
+		cancel.sendData();
 
 	}
 
