@@ -20,6 +20,16 @@ Primarily it is for automating web applications for testing purposes, but is cer
 Boring web-based administration tasks can (and should) also be automated as well 
 
 
+#Selenium Driver Initilization
+##Driver Initilization
+##WebDriver driver = new ChromeDriver();
+##WebDriver driver = new FirefoxDriver();
+##WebDriver driver = new InternetExplorerDriver();
+##WebDriver driver = new EdgeDriver();
+##WebDriver driver = new SafariDriver();
+##WebDriver driver = new HtmlUnitDriver();
+
+
 ## Authors
 
 [@Dipak Kadam](https://www.linkedin.com/in/dmk07/)
