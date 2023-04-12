@@ -20,14 +20,32 @@ Primarily it is for automating web applications for testing purposes, but is cer
 Boring web-based administration tasks can (and should) also be automated as well 
 
 
-#Selenium Driver Initilization
-##Driver Initilization
-##WebDriver driver = new ChromeDriver();
-##WebDriver driver = new FirefoxDriver();
-##WebDriver driver = new InternetExplorerDriver();
-##WebDriver driver = new EdgeDriver();
-##WebDriver driver = new SafariDriver();
-##WebDriver driver = new HtmlUnitDriver();
+## Driver Initilization
+
+WebDriver driver = new ChromeDriver();<br>
+WebDriver driver = new FirefoxDriver();<br>
+WebDriver driver = new InternetExplorerDriver();<br>
+WebDriver driver = new EdgeDriver();<br>
+WebDriver driver = new SafariDriver();<br>
+WebDriver driver = new HtmlUnitDriver();<br>
+
+## Element Locators
+
+driver.findElement(By.id("Id Value"));<br>
+driver.findElement(By.name("Name Value"));<br>
+driver.findElement(By.className("Class Name Value"));<br>
+driver.findElement(By.linkText("Link text Value"));<br>
+driver.findElement(By.partialLinkText("Partial Text Constant Value"));<br>
+driver.findElement(By.tagName("Tag Name Value"));<br>
+driver.findElement(By.cssSelector("CSS Value"));<br>
+driver.findElement(By.xpath("Xpath Value"));<br>
+driver.findElement(with(By.tagName("input")).above(passwordField));<br>
+driver.findElement(with(By.tagName("input")).below(emailAddressField));<br>
+driver.findElement(with(By.tagName("button")).toLeftOf(submitButton));<br>
+driver.findElement(with(By.tagName("button")).toRightOf(submitButton));<br>
+driver.findElement(with(By.tagName("input")).near(emailAddressLabel));<br>
+driver.findElement(new ByAll(By.className("ElementClassName"),By.id("Element Id"), By.name("Element Name")))<br>
+
 
 
 ## Authors
@@ -35,7 +53,7 @@ Boring web-based administration tasks can (and should) also be automated as well
 [@Dipak Kadam](https://www.linkedin.com/in/dmk07/)
 
 
-# Selenium
+##Selenium
 
 
 ### Table of Contents
