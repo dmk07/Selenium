@@ -46,6 +46,108 @@ driver.findElement(with(By.tagName("button")).toRightOf(submitButton));<br>
 driver.findElement(with(By.tagName("input")).near(emailAddressLabel));<br>
 driver.findElement(new ByAll(By.className("ElementClassName"),By.id("Element Id"), By.name("Element Name")))<br>
 
+## Elements Operations
+
+WebElement element =driver.FindElement(By.ElementLocator("Value of Element Locator"));<br>
+element.click();<br>
+element.sendKeys("Input Text");<br>
+element.clear();<br>
+element.submit();<br>
+element.getAttribute(“type”);<br>
+String innerText = element.getText();<br>
+boolean enabledstatus = element.isEnabled();<br>
+boolean displayedstatus = element.isDisplayed();<br>
+boolean selectedstatus = element.isSelected();<br>
+
+## Operation on drop down
+Select select = new Select(element);<br><br>
+select.selectByIndex(Integer Index);<br>
+select.selectByVisibleText("Text");<br>
+select.SelectByValue("Value");<br>
+select.deselectAll();<br>
+select.deselectByIndex(Integer Index);<br>
+select.deselectByVisibleText("Text");<br>
+select.deselectByValue("Value");<br><br>
+WebElement selectedOptions = select.getOptions();<br>
+
+## Browser Operations
+String pageTitle = driver.getTitle();<br>
+String currentURL = getCurrentUrl();<br>
+String currentPageSource = driver.getPageSource();<br>
+
+## Navigation history
+driver.get("https://www.facebook.com/");<br>
+driver.manage().window().maximize();<br>
+driver.manage().window().fullscreen();<br>  
+driver.navigate().to("https://www.google.com/");<br>
+driver.navigate().back();<br>
+driver.navigate().forward();<br>
+driver.navigate().refresh();<br>
+driver.close();<br>
+driver.quit();<br>
+
+## Handle Alert
+Alert alert = driver.switchTo().alert();<br>
+alert.accept();<br>
+alert.dismiss();<br>
+alert.getText();<br>
+alert.sendKeys(“Input Data");<br>
+## Handle Cookies
+Cookie cookie = new Cookie(“cookieName”, “cookieValue”);<br>
+driver.manage().addCookie(cookie);<br>
+driver.manage().getCookies();<br>
+driver.manage().getCookieNamed(arg0);<br>
+driver.manage().deleteAllCookies();<br>
+driver.manage().deleteCookieNamed(arg0);<br>
+## Handle frames
+driver.switchTo().frame(int Frame Index);<br><br>
+driver.switchTo().frame("frameName");<br>
+WebElement element =driver.FindElement(By.ElementLocator("Value of Element Locator"));<br>
+driver.switchTo().frame(element);<br>
+driver.SwitchTo().defaultContent();<br>
+## Screenshots Capture
+TakesScreenshot screenshot =((TakesScreenshot)driver);<br><br>
+File srcFile= screenshot.getScreenshotAs(OutputType.FILE);<br>
+FileHandler.copy(srcFile, destFile);<br>
+
+## Actions Class/Mouse Event
+Actions action = new Actions(driver);<br>
+action.keyDown(Keys.CONTROL);<br>
+action.keyUp(Keys.CONTROL);<br>
+action.clickAndHold(webElement).build().perform();<br>
+action.doubleClick(webElement).build().perform();<br>
+action.moveToElement(webElement).build().perform();<br>
+action.moveByOffset(xOffset,yOffset).build().perform();<br>
+action.dragAndDrop(sourceEle,targetEle).build().perform();<br>
+action.release().build().perform();<br>
+## Manage Timeouts
+driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);<br>
+welement = wait.until(Syntax: WebDriverWait wait = new WebDriverWait(driver, timeout);<br>
+ExpectedConditions.elementToBeClickable(locator));<br><br>
+welement.click();<br>
+driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);<br>
+## Upload a File
+WebElement element =driver.FindElement(By.ElementLocator("Value of ElementLocator"));<br>
+element.sendKeys(filePath);<br>
+## Window Handle
+String handle=driver.getWindowHandle();<br>
+Set<String> handles = getWindowHandles();<br><br>
+driver.switchTo().window(handle);<br>
+    
+##Capture Width and Height of an Element
+
+ Point point = element.getLocation();<br>
+int elementWidth = element.getSize().getWidth();<br>
+int elementHeight = element.getSize().getHeight();<br>
+    
+## Scroll Down or Up Web Page
+JavascriptExecutor js = (JavascriptExecutor)driver;<br><br>
+js.executeScript("window.scrollBy(0,100)");<br>
+js.executeScript("window.scrollTo(0,
+document.body.scrollHeight)");<br>
+WebElement element =driver.FindEle<br>ment(By.ElementLocator("Value of Element Locator"));<br>
+js. executeScript("arguments[0].scrollIntoView()", element);<br>
+
 
 
 ## Authors
