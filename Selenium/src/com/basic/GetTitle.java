@@ -5,7 +5,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class GetTitle {
 	static{  
-			System.setProperty("webdriver.edge.driver", "C://msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", "C:\\Users\\dmk61\\OneDrive\\Desktop\\msedgedriver.exe");
 	}
 	public WebDriver driver=new EdgeDriver();
 	
